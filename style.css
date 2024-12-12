@@ -1,0 +1,136 @@
+/* Geral */
+:root {
+    --cor-principal: #f10f0f;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+h1, .navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--cor-principal);
+}
+
+.navbar {
+    border-bottom: 2px solid var(--cor-principal);
+}
+
+.container {
+    margin-top: 20px;
+}
+
+/* Cards */
+.card {
+    border-radius: 0px;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container .card-header {
+    background-color: var(--cor-principal);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.card-body {
+    padding: 15px;
+}
+input[type="checkbox"]:checked{
+    background-color: var(--cor-principal);
+    outline: none;
+    border-color: var(--cor-principal);
+}
+input[type="checkbox"] .check-mostarda:checked{
+    background-color: yellow;
+    outline: none;
+    border-color: var(--cor-principal);
+}
+input[type="radio"]:checked{
+    background-color: var(--cor-principal);
+    outline: none;
+    border-color: var(--cor-principal);
+}
+
+/* Botões */
+.btn-primary {
+    background-color: var(--cor-principal);
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #196d00;
+    font-size: 20px;
+    transition: 1s;
+}
+
+.btn-success {
+    background-color: #5cb85c;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.btn-success:hover {
+    background-color: #4cae4c;
+}
+
+.btn-warning {
+    background-color: #f0ad4e;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.btn-warning:hover {
+    background-color: #ec971f;
+}
+
+/* Inputs */
+.form-check-label, .form-label {
+    font-weight: bold;
+}
+
+.form-control {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+/* Imagens */
+img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.row img {
+    margin: 10px 0;
+    width: 250px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .navbar {
+        text-align: center;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .col-md-6 {
+        max-width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
